@@ -1,0 +1,198 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+
+/*====================================================================div contenaire=======================================*/
+.container{
+    position: relative;
+    overflow: hidden;
+    border-radius: 22px;
+}
+.container:hover{
+    height: 590px;
+    width: 420px;
+    background: repeating-radial-gradient(rgba(172, 255, 47, 0.219), greenyellow 5px,  rgb(106, 104, 104) 15px,  rgb(106, 104, 104) 3px);
+    transition-delay: 1s ;
+}
+/*=============================================================Manipulation de la class card==============================*/
+.container .card{
+    position: relative;
+    width: 400px;
+    height: 580px;
+    background-color: rgb(106, 104, 104);
+    border-radius: 22px;
+    overflow: hidden;
+    border: black solid 2px;
+}
+
+.container .card:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: greenyellow;
+    clip-path: circle(200px at 80% 20%);
+    transition: .5s ease-in-out;
+}
+
+.container .card:hover:before{
+    clip-path: circle(400px at 80% -20%);
+}
+
+.container .card::after{
+    content: 'Nike';
+    position: absolute;
+    top: 34%;
+    left: -20%;
+    font-size: 270px;
+    font-weight: bold;
+    color: greenyellow;
+    opacity: .1;
+}
+
+/*=======================================================Manipulation de la class image===========================*/
+.container .card .image{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+    width: 100%;
+    height: 300px;
+    transition: .5s;
+}
+
+.container .card .image img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(-35deg);
+    width: 270px;
+}
+
+
+.container .card:hover .image{
+    top: 0%;
+    transform: translateY(0%);
+}
+
+
+/*====================================================Manipulation de la classe infos========================================*/ 
+.container .card .infos{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    z-index: 4;
+    transition: 1s;
+}
+
+.container .card .infos h2{
+    position: relative;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.container .card .infos .size,
+.container .card .infos .color{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.container .card .infos .size h3
+.container .card .infos .color h3{
+      color: white;
+      font-weight: bold;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      margin-right: 10px;
+}
+.container .card .infos .size span{
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+    text-align: center;
+    line-height: 30px;
+    display: inline-block;
+    color:black;
+    background-color: white;
+    margin: 5px;
+}
+.container .card .infos span:hover{
+    background-color:greenyellow;
+    transition: .5s;
+    cursor: pointer;
+    transform: scale(1.5);
+}
+
+.container .card .infos .color span{
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    margin: 5px;
+    cursor: pointer;
+}
+.container .card .infos .color span:nth-child(2){
+    background-color: yellow;
+}
+.container .card .infos .color span:nth-child(3){
+    background-color: rgb(16, 191, 231);
+}
+.container .card .infos .color span:nth-child(4){
+    background-color: rgb(0, 255, 26);
+}
+button{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 4px;
+    font-weight: bold;
+    color: black;
+    transform: translateY(10px);
+    transition-delay: .4s;
+}
+
+button:hover{
+    box-shadow: 5px 3px 2px 1px rgb(157, 255, 0);
+}
+.container .card:hover .infos .size{
+    transition-delay: .3s;
+    opacity: 1;
+    visibility: visible;
+}
+.container .card:hover .infos .color{
+    transition-delay: .3s;
+    opacity: 1;
+    visibility: visible;
+}
+.container .card:hover .infos{
+    height: 210px;
+}
+
+/*==========================================================Manipulation de la classe Ytransform==================================*/ 
+.container .card .infos .Ytransform{
+  opacity: 0;
+  visibility: hidden;
+  transition-delay: .2s;
+}
+.container .card:hover .infos .Ytransform{
+    opacity: 1;
+  visibility: visible;
+}
