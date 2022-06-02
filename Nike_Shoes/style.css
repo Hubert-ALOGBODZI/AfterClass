@@ -15,12 +15,15 @@ body{
     position: relative;
     overflow: hidden;
     border-radius: 22px;
+    border-top: 10px solid greenyellow;
+    border-right: 10px solid greenyellow;
 }
 .container:hover{
     height: 590px;
     width: 420px;
     background: repeating-radial-gradient(rgba(172, 255, 47, 0.219), greenyellow 5px,  rgb(106, 104, 104) 15px,  rgb(106, 104, 104) 3px);
     transition-delay: 1s ;
+    border: none;
 }
 /*=============================================================Manipulation de la class card==============================*/
 .container .card{
@@ -185,7 +188,6 @@ button:hover{
 .container .card:hover .infos{
     height: 210px;
 }
-
 /*==========================================================Manipulation de la classe Ytransform==================================*/ 
 .container .card .infos .Ytransform{
   opacity: 0;
