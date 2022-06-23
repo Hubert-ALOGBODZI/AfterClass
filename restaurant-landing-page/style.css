@@ -47,6 +47,7 @@ body{
      object-fit: cover;
      width: 50%;
      height: 100vh;
+     margin-right: -10%;
  }
  .container .home .design{
      position:relative;
