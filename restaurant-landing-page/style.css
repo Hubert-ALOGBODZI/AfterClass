@@ -64,8 +64,8 @@ body{
  }
  .container .home .text1{
    position: absolute;
-   top: 280px;
-   right: 380px;
+   top: 100px;
+   right: 150px;
     z-index: 4;
     color: white;
     font-size: 20px;
@@ -182,12 +182,13 @@ body{
 .container .product{
     position: relative;
     width: 100%;
-    height: 120vh;
+    height: 150vh;
     background-color: white;
+    margin-top: -1.8%;
  }
  .container .product .head{
     text-align: center;
-    padding-top: 5%;
+    padding-top: 2%;
  }
 
  .container .product .head h2{
@@ -239,10 +240,11 @@ body{
 }
 .container .oriental .head{
     position: absolute; 
-    top: 150px;
-    right: 400px;
+    top: 70px;
+    right: 300px;
     z-index: 6;
     color: white;
+    line-height: 20px;
 }
 
  .container .oriental .promo{
@@ -254,10 +256,10 @@ body{
 }
 .container .oriental .promo .img1 img{
   position: absolute; 
-    top: 10%;
+    top: 3%;
     left: 5%;
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
     border-radius: 50%;
 }
 .container .oriental .promo .bgimg img{
@@ -375,9 +377,10 @@ body{
 .container .statistics{
     text-align: center;
     position:relative;
-    margin-top: -30%;
+    margin-top: -20%;
     z-index: 6; 
     color: white;
+    line-height: 20px;
 }
 
 .container .statistics .imgS img{
@@ -470,14 +473,14 @@ body{
 .container .grill .imggrill img{
  position: absolute; 
  object-fit: cover;
-   top: 50px;
-   right: 200px;
-   width: 400px;
-   height: 400px;
+   top: 100px;
+   right: 100px;
+   width: 350px;
+   height: 350px;
    border-radius: 50%;
 }
  .container .grill .imggrillbg img{
-     margin-top: -30%;
+     margin-top: -20%;
      width: 100%;
      height: 100vh;
      transform: rotate(180deg);
@@ -485,9 +488,10 @@ body{
 
 .container .grill .description{
     position: absolute;
-    top: 20px;
-    left: 20%;
+    top: 80px;
+    left: 6%;
     color: white;
+    line-height: 20px;
 }
 
 @media screen and (max-width: 992px){
@@ -592,6 +596,7 @@ body{
     width: 100%;
     height:500px;
     margin-top: -4%;
+    padding-top: 2%;
 }
 .container .subscribe h2{
     font-weight: bold;
@@ -687,7 +692,6 @@ body{
         color: rgb(209, 206, 206);
     }  
 }
-
 
 
 
